@@ -30,5 +30,5 @@ test:
 production:
   <<: *default
   database: chat_app_production1
-  username: chat_app
-  password: <%= ENV["CHAT_APP_DATABASE_PASSWORD"] %>
+  username: <%= ENV['POSTGRES_USERNAME'] %>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
